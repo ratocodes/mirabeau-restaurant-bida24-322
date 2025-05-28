@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- In the <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+ 
+<body class="home-page">
+   
+<!-- Include Font Awesome CDN in your <head> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-utensils"></i>
+        <span class="restaurant-name">Mirabeau</span>
+      </div>
+
+      <!-- Sidebar Toggle Button -->
+<button id='toggleBtn'onclick="openNav()" class="openbtn">☰</button>
+
+
+<!-- Sidebar -->
+<nav id="sidebar-index" class="sidebar-index">
+  <div class="sidebar-header-index"></div>
+    
+  <ul class="nav flex-column">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="special message.html">Special Message</a></li>
+  </ul>
+</nav>
+
+<!--script open and close hamburger menue -->
+<script>
+ const toggleBtn = document.getElementById('toggleBtn');
+const sidebar = document.getElementById('sidebar-index');
+
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+});
+
+</script>
+
+
+
+
+<script>
+  document.getElementById('toggleSidebar').addEventListener('click', function () {
+    document.getElementById('sidebar').classList.toggle('open');
+  });
+  
+  document.getElementById('closeSidebar').addEventListener('click', function () {
+    document.getElementById('sidebar').classList.remove('open');
+  });
+  </script>
+  
+
+  </nav>
+ 
+<div data-aos="fade-up">
+    <section id="home" class="slide-in">
+        <div class="full-background">
+            <h1>Welcome to Mirabeau</h1>
+            <p>where flavors meet excellence</p> 
+        </div>
+      </div>
+        
+    </section> 
+
+    <section class="popular-dishes text-white text-center">
+      <div class="container">
+        <h2 class="mb-5">Most Popular Dishes</h2>
+        <div class="d-flex justify-content-center align-items-start gap-4 flex-wrap">
+    
+
+      <!-- Tonkotsu Ramen -->
+      <div>
+        <img src="images/tonkotsu ramen.jpg" alt="Tonkotsu Ramen"class="img-fluid rounded dish-image" style="max-width: 250px;">
+        <h5 class="mt-2">Tonkotsu Ramen</h5>
+      </div>
+
+
+      <!--Spring Rolls-->
+      <div>
+        <img src="images/spring rolls.jpg" alt="Spring Rolls"class="img-fluid rounded dish-image" style="max-width: 250px;">
+        <h5 class="mt-2">Spring Rolls</h5>
+      </div>
+
+      <!-- Mango Sticky Rice -->
+      <div>
+        <img src="images/mango sticky rice.jpg" alt="Mango Sticky Rice"class="img-fluid rounded dish-image" style="max-width: 250px;">
+        <h5 class="mt-2">Mango Sticky Rice</h5>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+      <section>
+        <div class="about-content">
+          <h2>About Mirebeau</h2>
+          <p>Mirebeau is where modern elegance meets rich Asian tradition. From delicate dim sum to bold Korean BBQ, every dish is handcrafted with passion and precision.</p>
+          <p>We blend the essence of street-style flavors with contemporary plating, offering a dining experience rooted in both heritage and innovation.</p>
+        </div>
+
+        <!-- About Section -->
+<section class="popular-dishes text-white text-center">
+  <div class="container-2">
+    <div class="d-flex justify-content-center align-items-start gap-4 flex-wrap">
+      
+      <!-- interior -->
+      <div>
+        <img src="images/interior-1.jpg" alt="interior-1" class="img-fluid rounded dish-image">     
+      </div>
+      
+      <!-- interior -->
+      <div>
+        <img src="images/interior-2.jpg" alt="interior-2" class="img-fluid rounded dish-image">
+      </div>
+
+      <!-- interior -->
+      <div>
+        <img src="images/interior-3.jpg" alt="interior-2" class="img-fluid rounded dish-image">   
+      </div>
+
+    </div>
+  </div>
+</section>
+        <a href="about.html" class="about-btn">Discover Our Story</a>
+      </section>
+    
+      
+    <section>
+    <div class="reservation">
+        <h2>Make a Reservation</h2>
+        <p>Book your table in advance to enjoy a seamless dining experience at Mirebeau.</p>
+  <a href="reservation.html" class="about-btn fade-in">Reserve Now</a>
+        <!-- Add reservation form or external link to a reservation system -->
+    </section>
+ 
+
+    <section>
+     <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Jackson Park St.</p>
+        <p>Email: Mirebeaurestaurant@gmail.com</p>
+        <p>Phone: (555) 123-4567</p>
+          <a href="contact.html" class="contact-btn fade-in">Contact Us</a>
+      </div>
+   </section>
+
+
+      <section>
+    <div class="chefs-message">
+        <h2 class="fade-in">Message from Our Chefs</h2>
+        <p class="fade-in">"Our commitment is to deliver the freshest, most delicious meals, crafted with love."</p>
+    </div>
+      </section>
+
+
+<section>
+    <footer>
+        <p>&copy; 2025 Mirebeau Restaurant | All Rights Reserved</p>
+    </footer>
+</section>
+
+
+    <!-- Before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript code (place this just before the closing </body>) -->
+<script>
+    // Modal functionality
+    const modal = document.getElementById("confirmationModal");
+    const closeModal = document.querySelector(".close-btn");
+    const reservationForm = document.getElementById("reservationForm");
+  
+    reservationForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      // Show confirmation modal on submit
+      modal.style.display = "block";
+    });
+  
+    // Close modal
+    closeModal.addEventListener("click", function() {
+      modal.style.display = "none";
+    });
+  
+    // Close modal if clicked outside
+    window.addEventListener("click", function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+
+<audio id="clickSound" src="audio/click.mp3" preload="auto"></audio>
+
+<script>
+  const submitBtn = document.querySelector('.submit-btn');
+  const clickSound = document.getElementById('clickSound');
+
+  submitBtn.addEventListener('click', () => {
+    clickSound.currentTime = 0;
+    clickSound.play();
+  });
+</script>
+
+<section>
+  <footer>
+      <p>&copy; 2025 Mirebeau Restaurant | All Rights Reserved</p>
+  </footer>
+</section>
+
+  </body>
+  </html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Mirabeau</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="menu-page">
+    <header>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="fade-in">Home</a></li>
+            <li><a href="about.html" class="fade-in">About</a></li>
+            <li><a href="menu.html" class="fade-in">Menu</a></li>
+            <li><a href="reservation.html" class="fade-in">Reservation</a></li>
+            <li><a href="contact.html" class="fade-in">Contact</a></li>
+            <li><a href="special message.html" class="fade-in"> Special Message</a></li>
+         </ul>
+        </nav>
+    </header>
+    
+      <section id="menu-page">
+        <div class="menu-container">
+          <h2 class="fade-in">Mirabeau Michelin Star Inspired Menu</h2>
+          <p class="fade-in">Indulge in a culinary journey that blends traditional Asian flavors with modern Michelin-starred techniques. Here is our curated menu featuring exquisite dishes, refreshing drinks, and indulgent desserts.</p>
+    
+          <div class="menu-btn-group">
+            <button id="btn-starters" class="menu-btn" onclick="showCarousel('starters-carousel')">Starters</button>
+            <button id="btn-main" class="menu-btn" onclick="showCarousel('main-carousel')">Main Courses</button>
+            <button id="btn-drinks" class="menu-btn" onclick="showCarousel('drinks-carousel')">Drinks</button>
+            <button id="btn-desserts" class="menu-btn" onclick="showCarousel('desserts-carousel')">Desserts</button>
+          </div>
+    
+          <!-- Starters -->
+          <div id="starters-carousel" class="menu-carousel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active text-center">
+                <img src="images/Spicy Tuna Tartare on Crispy Wonton Chips.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Spicy Tuna Tartare" />
+                <h3>Spicy Tuna Tartare</h3>
+                <p>Yellowtail tuna, avocado, sesame oil, soy-ginger dressing, and microgreens.</p>
+                <span class="price">$14.99</span>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="images/dumplings.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Pork Dumplings" />
+                <h3>Pork Dumplings</h3>
+                <p>Handmade dumplings with savory pork filling and soy dip.</p>
+                <span class="price">$9.50</span>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="images/miso soup.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Miso Soup" />
+                <h3>Miso Soup</h3>
+                <p>Traditional Japanese miso broth with tofu, seaweed, and scallions.</p>
+                <span class="price">$5.99</span>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="images/dim sum platter.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Dim Sum Platter" />
+                <h3>Dim Sum Platter</h3>
+                <p>Steamed dumplings with pork, shrimp, and vegetables served with soy dipping sauce.</p>
+                <span class="price">$12.50</span>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="images/spring rolls.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Thai Spring Rolls" />
+                <h3>Thai Spring Rolls</h3>
+                <p>Fresh rice paper rolls with shrimp, mint, and vermicelli noodles, served with a sweet chili sauce.</p>
+                <span class="price">$8.75</span>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="images/black cod miso.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Black Cod Miso" />
+                <h3>Black Cod Miso</h3>
+                <p>Miso-marinated black cod, grilled to perfection with a side of sautéed bok choy.</p>
+                <span class="price">$19.50</span>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#starters-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#starters-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          
+              <!-- Main Courses -->
+<div id="main-carousel" class="menu-carousel carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center">
+      <img src="images/grilled teriyaki salmon.jpeg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Grilled Teriyaki Salmon">
+      <h3>Grilled Teriyaki Salmon</h3>
+      <p>Salmon glazed in teriyaki sauce, served with garlic rice and bok choy.</p>
+      <span class="price">$13.50</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/ramen.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Wagyu Beef Ramen">
+      <h3>Wagyu Beef Ramen</h3>
+      <p>Hand-pulled ramen in miso broth with Wagyu beef, egg, and nori.</p>
+      <span class="price">$16.95</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/black cod miso.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Black Cod Miso">
+      <h3>Black Cod Miso</h3>
+      <p>Miso-marinated black cod, grilled to perfection with a side of sautéed bok choy.</p>
+      <span class="price">$19.50</span>
+    </div>
+    
+    <div class="carousel-item text-center">
+      <img src="images/thai red curry.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Thai Red Curry">
+      <h3>Thai Red Curry</h3>
+      <p>A rich and spicy coconut-based curry with chicken, bamboo shoots, and Thai basil, served with jasmine rice.</p>
+      <span class="price">$13.75</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/korean ribs.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Korean BBQ Short Ribs">
+      <h3>Korean BBQ Short Ribs</h3>
+      <p>Marinated short ribs grilled and served with kimchi and pickled vegetables.</p>
+      <span class="price">$18.25</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/garlic shrimp.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Szechuan Shrimp">
+      <h3>Szechuan Shrimp</h3>
+      <p>Sautéed shrimp in a bold Szechuan peppercorn sauce with stir-fried vegetables.</p>
+      <span class="price">$14.60</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/beef bulgogi.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Beef Bulgogi">
+      <h3>Beef Bulgogi</h3>
+      <p>Grilled marinated beef served with a side of steamed rice and sautéed mushrooms.</p>
+      <span class="price">$15.40</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/katsu.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Japanese Katsu Curry">
+      <h3>Japanese Katsu Curry</h3>
+      <p>Crispy breaded pork cutlet served with Japanese curry sauce and steamed rice.</p>
+      <span class="price">$13.99</span>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Drinks -->
+<div id="drinks-carousel" class="menu-carousel carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center">
+      <img src="images/lychee martini.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Lychee Martini">
+      <h3>Lychee Martini</h3>
+      <p>A refreshing martini made with lychee liqueur, vodka, and fresh lime.</p>
+      <span class="price">$9.95</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/jasmine tea.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Jasmine Green Tea">
+      <h3>Jasmine Green Tea</h3>
+      <p>Fragrant green tea infused with jasmine petals.</p>
+      <span class="price">$3.50</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/thai iced tea.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Thai Iced Tea">
+      <h3>Thai Iced Tea</h3>
+      <p>Sweetened Thai tea served over ice with a splash of condensed milk.</p>
+      <span class="price">$4.25</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/umeshu plum wine.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Umeshu Plum Wine">
+      <h3>Umeshu Plum Wine</h3>
+      <p>A delicate, sweet Japanese wine made from ume fruit.</p>
+      <span class="price">$8.00</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/Singapore Sling.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Singapore Sling">
+      <h3>Singapore Sling</h3>
+      <p>A tropical cocktail made with gin, cherry brandy, pineapple juice, and a hint of bitters.</p>
+      <span class="price">$10.50</span>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#drinks-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#drinks-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Desserts -->
+<div id="desserts-carousel" class="menu-carousel carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center">
+      <img src="images/matcha tiramisu.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Matcha Tiramisu">
+      <h3>Matcha Tiramisu</h3>
+      <p>Matcha tiramisu layered with green tea mascarpone cream.</p>
+      <span class="price">$6.95</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/mango sticky rice.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Mango Sticky Rice">
+      <h3>Mango Sticky Rice</h3>
+      <p>Sweet coconut sticky rice paired with ripe mango slices.</p>
+      <span class="price">$5.95</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/sesame pinna cotta.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Black Sesame Panna Cotta">
+      <h3>Black Sesame Panna Cotta</h3>
+      <p>A silky-smooth panna cotta infused with toasted black sesame seeds.</p>
+      <span class="price">$6.50</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/tempura ice cream.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Tempura Ice Cream">
+      <h3>Tempura Ice Cream</h3>
+      <p>Vanilla ice cream coated in a crispy tempura batter, served with chocolate sauce.</p>
+      <span class="price">$6.75</span>
+    </div>
+
+    <div class="carousel-item text-center">
+      <img src="images/red bean mochi.jpg" class="img-fluid rounded-circle d-block mx-auto" style="width:250px; height:250px; object-fit:cover;" alt="Red Bean Mochi">
+      <h3>Red Bean Mochi</h3>
+      <p>Soft mochi filled with sweet red bean paste, lightly dusted with powdered sugar.</p>
+      <span class="price">$4.95</span>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#desserts-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#desserts-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+  <!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+
+<script>
+  function showCarousel(carouselId) {
+    // Hide all carousels
+    const carousels = document.querySelectorAll('.menu-carousel');
+    carousels.forEach(carousel => {
+      carousel.style.display = 'none';
+    });
+
+    // Show the selected carousel
+    const selected = document.getElementById(carouselId);
+    if (selected) {
+      selected.style.display = 'block';
+    }
+  }
+
+  // Optionally show the first carousel on page load
+  document.addEventListener("DOMContentLoaded", function () {
+    showCarousel('starters-carousel');
+  });
+</script>
+
+
+<section>
+  <footer>
+      <p>&copy; 2025 Mirebeau Restaurant | All Rights Reserved</p>
+  </footer>
+</section>
+
+  </body>
+  </html>
+

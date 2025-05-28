@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Mirabeau</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="fade-in">Home</a></li>
+            <li><a href="about.html" class="fade-in">About</a></li>
+            <li><a href="menu.html" class="fade-in">Menu</a></li>
+            <li><a href="reservation.html" class="fade-in">Reservation</a></li>
+            <li><a href="contact.html" class="fade-in">Contact</a></li>
+            <li><a href="special message.html" class="fade-in"> Special Message</a></li>
+        </ul>
+        </nav>
+    </header>
+ 
+    <section id="reservation" class="reservation-section text-light">
+        <div class="container py-5">
+          <div class="reservation-form-wrapper p-5 rounded-4">
+            <h2 class="text-center mb-4">Reserve Your Table</h2>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="date" class="form-control" name="date" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="time" class="form-control" name="time" required>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select" name="people" required>
+                    <option value="" disabled selected>Number of People</option>
+                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" name="requests" rows="3" placeholder="Special Requests (optional)"></textarea>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <button type="submit" class="submit-btn">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+     
+<section>
+  <footer>
+      <p>&copy; 2025 Mirebeau Restaurant | All Rights Reserved</p>
+  </footer>
+</section>
+
+  </body>
+  </html>
+
